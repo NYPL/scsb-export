@@ -1,0 +1,26 @@
+{
+  "name": "scsb-export",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NYPL/scsb-export.git"
+  },
+  "author": "matt miller <thisismattmiller@gmail.com> (http://twitter.com/thisismmiller)",
+  "license": "MIT",
+  "dependencies": {
+    "command-line-args": "^3.0.0",
+    "eyes": "^0.1.8",
+    "highland": "^2.8.1",
+    "xml2js": "^0.4.16"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "should": "^9.0.0",
+    "standard": "^7.1.1"
+  }
+}

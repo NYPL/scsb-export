@@ -1,0 +1,220 @@
+<?xml version="1.0" ?>
+<bibRecords>
+  <bibRecord>
+    <bib>
+      <owningInstitutionId>NYPL</owningInstitutionId>
+      <owningInstitutionBibId>.b153252753</owningInstitutionBibId>
+      <content>
+        <collection xmlns="http://www.loc.gov/MARC21/slim">
+          <record>
+            <leader>02025cam a2200529 a 4500</leader>
+            <controlfield tag="001">42244013</controlfield>
+            <controlfield tag="003">OCoLC</controlfield>
+            <controlfield tag="005">20020123094358.7</controlfield>
+            <controlfield tag="008">991111s1999    gw       b    001 0 ger  </controlfield>
+            <datafield ind1=" " ind2=" " tag="010">
+              <subfield code="a">00348029</subfield>
+            </datafield>
+            <datafield ind1="7" ind2=" " tag="016">
+              <subfield code="a">956451136</subfield>
+              <subfield code="2">GyFmDB</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="020">
+              <subfield code="a">3451239248 (v. 1 : gebunden)</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="020">
+              <subfield code="a">3451238241 (v. 1, kartoniert)</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="020">
+              <subfield code="a">345123825X (v. 2, kartoniert)</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="020">
+              <subfield code="a">3451239256 (v. 2, gebunden)</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="020">
+              <subfield code="a">3451236664 (v. 4 : cl.)</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="020">
+              <subfield code="a">3451236656 (cl.)</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="035">
+              <subfield code="a">(WaOLN)M220000352</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="040">
+              <subfield code="a">DLC</subfield>
+              <subfield code="c">DLC</subfield>
+              <subfield code="d">XII</subfield>
+              <subfield code="d">OHX</subfield>
+              <subfield code="d">NYP</subfield>
+              <subfield code="d">WaOLN</subfield>
+            </datafield>
+            <datafield ind1="1" ind2=" " tag="041">
+              <subfield code="a">gerlat</subfield>
+              <subfield code="h">lat</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="049">
+              <subfield code="a">NYPG</subfield>
+            </datafield>
+            <datafield ind1="0" ind2="0" tag="050">
+              <subfield code="a">BX2000.A5</subfield>
+              <subfield code="b">G38 1999</subfield>
+            </datafield>
+            <datafield ind1=" " ind2="7" tag="072">
+              <subfield code="a">BX</subfield>
+              <subfield code="2">lcco</subfield>
+            </datafield>
+            <datafield ind1="0" ind2="0" tag="082">
+              <subfield code="a">264/.02</subfield>
+              <subfield code="2">21</subfield>
+            </datafield>
+            <datafield ind1="0" ind2=" " tag="100">
+              <subfield code="a">Rupert,</subfield>
+              <subfield code="c">of Deutz,</subfield>
+              <subfield code="d">approximately 1075-1129.</subfield>
+            </datafield>
+            <datafield ind1="1" ind2="0" tag="240">
+              <subfield code="a">Liber de divinis officiis.</subfield>
+              <subfield code="l">German &amp; Latin</subfield>
+            </datafield>
+            <datafield ind1="1" ind2="0" tag="245">
+              <subfield code="a">Liber de divinis officiis =</subfield>
+              <subfield code="b">Der Gottesdienst der Kirche /</subfield>
+              <subfield code="c">Rupert von Deutz ; auf der Textgrundlage der Edition von Hrabanus Haacke neu herausgegeben, übersetzt und eingeleitet von Helmut und Ilse Deutz.</subfield>
+            </datafield>
+            <datafield ind1="3" ind2="1" tag="246">
+              <subfield code="a">Gottesdienst der Kirche</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="260">
+              <subfield code="a">Freiburg ;</subfield>
+              <subfield code="a">New York :</subfield>
+              <subfield code="b">Herder,</subfield>
+              <subfield code="c">c1999.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="300">
+              <subfield code="a">4 v. ;</subfield>
+              <subfield code="c">20 cm.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2="0" tag="440">
+              <subfield code="a">Fontes Christiani ;</subfield>
+              <subfield code="v">Bd. 33</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="504">
+              <subfield code="a">Includes bibliographical references and indexes.</subfield>
+            </datafield>
+            <datafield ind1="2" ind2="0" tag="610">
+              <subfield code="a">Catholic Church</subfield>
+              <subfield code="x">Liturgy</subfield>
+              <subfield code="v">Texts</subfield>
+              <subfield code="v">Early works to 1800.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2="0" tag="650">
+              <subfield code="a">Divine office</subfield>
+              <subfield code="v">Texts</subfield>
+              <subfield code="v">Early works to 1800.</subfield>
+            </datafield>
+            <datafield ind1="1" ind2=" " tag="700">
+              <subfield code="a">Deutz, Helmut.</subfield>
+            </datafield>
+            <datafield ind1="1" ind2=" " tag="700">
+              <subfield code="a">Deutz, Ilse,</subfield>
+              <subfield code="d">1925-</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="907">
+              <subfield code="a">.b153252753</subfield>
+              <subfield code="c">m</subfield>
+              <subfield code="d">a</subfield>
+              <subfield code="e">-</subfield>
+              <subfield code="f">ger</subfield>
+              <subfield code="g">gw </subfield>
+              <subfield code="h">0</subfield>
+              <subfield code="i">6</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="952">
+              <subfield code="h">JFK 02-36</subfield>
+            </datafield>
+          </record>
+        </collection>
+      </content>
+    </bib>
+    <holdings>
+      <holding>
+        <owningInstitutionHoldingsId>.c10470153</owningInstitutionHoldingsId>
+        <content>
+          <collection xmlns="http://www.loc.gov/MARC21/slim">
+            <record>
+              <datafield ind1=" " ind2=" " tag="852">
+                <subfield code="b">rc2ma</subfield>
+                <subfield code="h">JFK 02-36</subfield>
+              </datafield>
+              <datafield ind1=" " ind2=" " tag="866">
+                <subfield code="a">1-4-</subfield>
+              </datafield>
+            </record>
+          </collection>
+        </content>
+        <items>
+          <content>
+            <collection xmlns="http://www.loc.gov/MARC21/slim">
+              <record>
+                <datafield ind1=" " ind2=" " tag="876">
+                  <subfield code="p">33433015676046</subfield>
+                  <subfield code="h">Shared</subfield>
+                  <subfield code="a">.i116637304</subfield>
+                  <subfield code="j">-</subfield>
+                  <subfield code="t">1</subfield>
+                  <subfield code="3">Bd. 2</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="900">
+                  <subfield code="a">In Library Use</subfield>
+                  <subfield code="b">NA</subfield>
+                </datafield>
+              </record>
+              <record>
+                <datafield ind1=" " ind2=" " tag="876">
+                  <subfield code="p">33433016168027</subfield>
+                  <subfield code="h">Shared</subfield>
+                  <subfield code="a">.i116637298</subfield>
+                  <subfield code="j">-</subfield>
+                  <subfield code="t">1</subfield>
+                  <subfield code="3">Bd. 1</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="900">
+                  <subfield code="a">In Library Use</subfield>
+                  <subfield code="b">NA</subfield>
+                </datafield>
+              </record>
+              <record>
+                <datafield ind1=" " ind2=" " tag="876">
+                  <subfield code="p">33433015676186</subfield>
+                  <subfield code="h">Shared</subfield>
+                  <subfield code="a">.i116637316</subfield>
+                  <subfield code="j">-</subfield>
+                  <subfield code="t">1</subfield>
+                  <subfield code="3">Bd. 3</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="900">
+                  <subfield code="a">In Library Use</subfield>
+                  <subfield code="b">NA</subfield>
+                </datafield>
+              </record>
+              <record>
+                <datafield ind1=" " ind2=" " tag="876">
+                  <subfield code="p">33433015675931</subfield>
+                  <subfield code="h">Shared</subfield>
+                  <subfield code="a">.i116637328</subfield>
+                  <subfield code="j">-</subfield>
+                  <subfield code="t">1</subfield>
+                  <subfield code="3">Bd. 4</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="900">
+                  <subfield code="a">In Library Use</subfield>
+                  <subfield code="b">NA</subfield>
+                </datafield>
+              </record>
+            </collection>
+          </content>
+        </items>
+      </holding>
+    </holdings>
+  </bibRecord>
+</bibRecords>

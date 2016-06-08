@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+	<marc:record>
+		<marc:leader>02025cam a2200529 a 4500</marc:leader>
+		<marc:controlfield tag="001">42244013</marc:controlfield>
+		<marc:controlfield tag="003">OCoLC</marc:controlfield>
+		<marc:controlfield tag="005">20020123094358.7</marc:controlfield>
+		<marc:controlfield tag="008">991111s1999    gw       b    001 0 ger  </marc:controlfield>
+		<marc:datafield ind1=" " ind2=" " tag="010">
+			<marc:subfield code="a">00348029</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1="7" ind2=" " tag="016">
+			<marc:subfield code="a">956451136</marc:subfield>
+			<marc:subfield code="2">GyFmDB</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="020">
+			<marc:subfield code="a">3451239248 (v. 1 : gebunden)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="020">
+			<marc:subfield code="a">3451238241 (v. 1, kartoniert)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="020">
+			<marc:subfield code="a">345123825X (v. 2, kartoniert)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="020">
+			<marc:subfield code="a">3451239256 (v. 2, gebunden)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="020">
+			<marc:subfield code="a">3451236664 (v. 4 : cl.)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="020">
+			<marc:subfield code="a">3451236656 (cl.)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="035">
+			<marc:subfield code="a">(WaOLN)M220000352</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="040">
+			<marc:subfield code="a">DLC</marc:subfield>
+			<marc:subfield code="c">DLC</marc:subfield>
+			<marc:subfield code="d">XII</marc:subfield>
+			<marc:subfield code="d">OHX</marc:subfield>
+			<marc:subfield code="d">NYP</marc:subfield>
+			<marc:subfield code="d">WaOLN</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1="1" ind2=" " tag="041">
+			<marc:subfield code="a">gerlat</marc:subfield>
+			<marc:subfield code="h">lat</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="049">
+			<marc:subfield code="a">NYPG</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1="0" ind2="0" tag="050">
+			<marc:subfield code="a">BX2000.A5</marc:subfield>
+			<marc:subfield code="b">G38 1999</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2="7" tag="072">
+			<marc:subfield code="a">BX</marc:subfield>
+			<marc:subfield code="2">lcco</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1="0" ind2="0" tag="082">
+			<marc:subfield code="a">264/.02</marc:subfield>
+			<marc:subfield code="2">21</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1="0" ind2=" " tag="100">
+			<marc:subfield code="a">Rupert,</marc:subfield>
+			<marc:subfield code="c">of Deutz,</marc:subfield>
+			<marc:subfield code="d">approximately 1075-1129.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1="1" ind2="0" tag="240">
+			<marc:subfield code="a">Liber de divinis officiis.</marc:subfield>
+			<marc:subfield code="l">German &amp; Latin</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1="1" ind2="0" tag="245">
+			<marc:subfield code="a">Liber de divinis officiis =</marc:subfield>
+			<marc:subfield code="b">Der Gottesdienst der Kirche /</marc:subfield>
+			<marc:subfield code="c">Rupert von Deutz ; auf der Textgrundlage der Edition von Hrabanus Haacke neu herausgegeben, übersetzt und eingeleitet von Helmut und Ilse Deutz.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1="3" ind2="1" tag="246">
+			<marc:subfield code="a">Gottesdienst der Kirche</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="260">
+			<marc:subfield code="a">Freiburg ;</marc:subfield>
+			<marc:subfield code="a">New York :</marc:subfield>
+			<marc:subfield code="b">Herder,</marc:subfield>
+			<marc:subfield code="c">c1999.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="300">
+			<marc:subfield code="a">4 v. ;</marc:subfield>
+			<marc:subfield code="c">20 cm.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2="0" tag="440">
+			<marc:subfield code="a">Fontes Christiani ;</marc:subfield>
+			<marc:subfield code="v">Bd. 33</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="504">
+			<marc:subfield code="a">Includes bibliographical references and indexes.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1="2" ind2="0" tag="610">
+			<marc:subfield code="a">Catholic Church</marc:subfield>
+			<marc:subfield code="x">Liturgy</marc:subfield>
+			<marc:subfield code="v">Texts</marc:subfield>
+			<marc:subfield code="v">Early works to 1800.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2="0" tag="650">
+			<marc:subfield code="a">Divine office</marc:subfield>
+			<marc:subfield code="v">Texts</marc:subfield>
+			<marc:subfield code="v">Early works to 1800.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1="1" ind2=" " tag="700">
+			<marc:subfield code="a">Deutz, Helmut.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1="1" ind2=" " tag="700">
+			<marc:subfield code="a">Deutz, Ilse,</marc:subfield>
+			<marc:subfield code="d">1925-</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="852">
+			<marc:subfield code="a">.i116637304</marc:subfield>
+			<marc:subfield code="b">rc2ma</marc:subfield>
+			<marc:subfield code="3">Bd. 2</marc:subfield>
+			<marc:subfield code="y">214</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="852">
+			<marc:subfield code="a">.i116637298</marc:subfield>
+			<marc:subfield code="b">rc2ma</marc:subfield>
+			<marc:subfield code="3">Bd. 1</marc:subfield>
+			<marc:subfield code="y">214</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="852">
+			<marc:subfield code="a">.i116637316</marc:subfield>
+			<marc:subfield code="b">rc2ma</marc:subfield>
+			<marc:subfield code="3">Bd. 3</marc:subfield>
+			<marc:subfield code="y">214</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="852">
+			<marc:subfield code="a">.i116637328</marc:subfield>
+			<marc:subfield code="b">rc2ma</marc:subfield>
+			<marc:subfield code="3">Bd. 4</marc:subfield>
+			<marc:subfield code="y">214</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="866">
+			<marc:subfield code="a">1-4-</marc:subfield>
+			<marc:subfield code="y">.c10470153</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="876">
+			<marc:subfield code="a">.i116637304</marc:subfield>
+			<marc:subfield code="j">-</marc:subfield>
+			<marc:subfield code="k">rc2ma</marc:subfield>
+			<marc:subfield code="o">2</marc:subfield>
+			<marc:subfield code="p">33433015676046</marc:subfield>
+			<marc:subfield code="s">214</marc:subfield>
+			<marc:subfield code="t">1</marc:subfield>
+			<marc:subfield code="y">2</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="876">
+			<marc:subfield code="a">.i116637298</marc:subfield>
+			<marc:subfield code="j">-</marc:subfield>
+			<marc:subfield code="k">rc2ma</marc:subfield>
+			<marc:subfield code="o">2</marc:subfield>
+			<marc:subfield code="p">33433016168027</marc:subfield>
+			<marc:subfield code="s">214</marc:subfield>
+			<marc:subfield code="t">1</marc:subfield>
+			<marc:subfield code="y">2</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="876">
+			<marc:subfield code="a">.i116637316</marc:subfield>
+			<marc:subfield code="j">-</marc:subfield>
+			<marc:subfield code="k">rc2ma</marc:subfield>
+			<marc:subfield code="o">2</marc:subfield>
+			<marc:subfield code="p">33433015676186</marc:subfield>
+			<marc:subfield code="s">214</marc:subfield>
+			<marc:subfield code="t">1</marc:subfield>
+			<marc:subfield code="y">2</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="876">
+			<marc:subfield code="a">.i116637328</marc:subfield>
+			<marc:subfield code="j">-</marc:subfield>
+			<marc:subfield code="k">rc2ma</marc:subfield>
+			<marc:subfield code="o">2</marc:subfield>
+			<marc:subfield code="p">33433015675931</marc:subfield>
+			<marc:subfield code="s">214</marc:subfield>
+			<marc:subfield code="t">1</marc:subfield>
+			<marc:subfield code="y">2</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="907">
+			<marc:subfield code="a">.b153252753</marc:subfield>
+			<marc:subfield code="c">m</marc:subfield>
+			<marc:subfield code="d">a</marc:subfield>
+			<marc:subfield code="e">-</marc:subfield>
+			<marc:subfield code="f">ger</marc:subfield>
+			<marc:subfield code="g">gw </marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="i">6</marc:subfield>
+		</marc:datafield>
+		<marc:datafield ind1=" " ind2=" " tag="952">
+			<marc:subfield code="h">JFK 02-36</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+</marc:collection>
