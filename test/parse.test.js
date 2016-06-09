@@ -63,10 +63,14 @@ describe('mapUtils lib/utils.js', function () {
       if (err) console.log(err)
       var data = parsLib.extractData(jsObj)
       var has001 = false
+      var has003 = false
       data.recordControlFields.forEach((cf) => {
         if (cf['$'].tag === '001') has001 = cf._
+        if (cf['$'].tag === '003') has003 = cf._
       })
-      has001.should.equal('NYPL.b3956490')
+      has001.should.equal('3956490')
+      has003.should.equal('OCoLC')
+
       done()
     })
   })
