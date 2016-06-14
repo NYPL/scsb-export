@@ -20,6 +20,8 @@ node index.js --marc "test/test_multiple_callnumbers.xml" --barcode "test/barcod
 ```
 This will create a new XML file called `test/test_has_866_converted.xml` and also a log file called `test/test_has_866_converted.log`
 
+---
+
 There are a number of errors that can occur and be reported in the log file, here is a list:
 
 `852 missing inumber` - an item's 852 feild is missing its subfield a
@@ -40,7 +42,10 @@ There are a number of errors that can occur and be reported in the log file, her
 
 `Missing callnumber in items` - something went very wrong, no call number for an item
 
+---
 
+
+`npm test` will run the test suite and also generate the example/test files found in `test/examples/*.mrc`
 
 
 
