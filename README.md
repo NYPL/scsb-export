@@ -10,7 +10,7 @@ To get started
 - Install node + npm (**requires node 5.x due to an old libxmljs dependency**)
 - `git clone https://github.com/NYPL/scsb-export.git`
 - `npm install`
-- run index.js with the parameters --marc for the MARC file and --barcode for the barcode
+- run mrc2scsb.js with the parameters --marc for the MARC file and --barcode for the barcode
 
 For example if I wanted to run it on one of the test files I would execute:
 
@@ -19,6 +19,15 @@ node index.js --marc "test/test_multiple_callnumbers.xml" --barcode "test/barcod
 
 ```
 This will create a new XML file called `test/test_has_866_converted.xml` and also a log file called `test/test_has_866_converted.log`
+
+You can also tell it to start or stop if you only want to process X number of records
+
+```
+--start 1
+--stop 5000
+```
+
+Mean only process the first 5000 records in the file
 
 ---
 
