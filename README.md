@@ -15,7 +15,7 @@ To get started
 For example if I wanted to run it on one of the test files I would execute:
 
 ```
-node index.js --marc "test/test_multiple_callnumbers.xml" --barcode "test/barcode.test.txt" 
+node mrc2scsb.js --marc "test/test_multiple_callnumbers.xml" --barcode "test/barcode.test.txt" 
 
 ```
 This will create a new XML file called `test/test_has_866_converted.xml` and also a log file called `test/test_has_866_converted.log`
@@ -60,7 +60,7 @@ There are a number of errors that can occur and be reported in the log file, her
 ---
 
 ###XML Format
-The resulting XML file will not be pretty printed but will be well formed with each `<bibRecord>` on its own line terminated with a \n:
+The resulting XML file will not be pretty printed but will be well formed with each `<bibRecord>` on its own line terminated with a `\n`:
 
 ```
 <?xml version="1.0" ?>
