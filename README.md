@@ -15,7 +15,7 @@ To get started
 For example if I wanted to run it on one of the test files I would execute:
 
 ```
-node mrc2scsb.js --marc "test/test_multiple_callnumbers.xml" --barcode "test/barcode.test.txt" 
+node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt" 
 
 ```
 This will create a new XML file called `test/test_has_866_converted.xml` and also a log file called `test/test_has_866_converted.log`
