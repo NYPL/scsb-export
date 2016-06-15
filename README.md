@@ -60,7 +60,7 @@ There are a number of errors that can occur and be reported in the log file, her
 ---
 
 ###XML Format
-The resulting XML file will not be pretty printed but will be well formed with each <bibRecord> on its own line terminated with a \n:
+The resulting XML file will not be pretty printed but will be well formed with each `<bibRecord>` on its own line terminated with a \n:
 
 ```
 <?xml version="1.0" ?>
