@@ -17,7 +17,6 @@
     "eyes": "^0.1.8",
     "highland": "^2.8.1",
     "marcjs": "^0.1.12",
-    "object-sizeof": "^1.0.10",
     "xml2js": "^0.4.16"
   },
   "devDependencies": {

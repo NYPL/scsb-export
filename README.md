@@ -27,10 +27,10 @@ You can also tell it to start or stop if you only want to process X number of re
 --stop 5000
 ```
 
-Mean only process the first 5000 records in the file
+Means only process the first 5000 records in the file
 
 ---
-
+###Errors
 There are a number of errors that can occur and be reported in the log file, here is a list:
 
 `852 missing inumber` - an item's 852 feild is missing its subfield a
@@ -53,11 +53,28 @@ There are a number of errors that can occur and be reported in the log file, her
 
 ---
 
-
+###Tests
 `npm test` will run the test suite and also generate the example/test files found in `test/examples/*.mrc`
 
 
+---
 
+###XML Format
+The resulting XML file will not be pretty printed but will be well formed with each <bibRecord> on its own line terminated with a \n:
+
+```
+<?xml version="1.0" ?>
+<bibRecords>
+  <bibRecord><bib><owningInstitutionId>NYPL</owningInstitutionId>...
+  <bibRecord><bib><owningInstitutionId>NYPL</owningInstitutionId>...
+  <bibRecord><bib><owningInstitutionId>NYPL</owningInstitutionId>...
+  <bibRecord><bib><owningInstitutionId>NYPL</owningInstitutionId>...
+  ...
+</bibRecords>
+  
+```
+
+This would allow someone to stream the file line-by-line to access all the records.
 
  
 
