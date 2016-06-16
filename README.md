@@ -3,7 +3,7 @@
 
 Converts ILS MARC Binary export to SCSB middleware schema for the shared collection ReCAP project.
 
-This process expects you have a MARC binary (.mrc) file exported from the ILS export table designed for this process, here is [how it looks in XML](https://github.com/NYPL/scsb-export/blob/master/test/test_has_866.xml) (since it is hard to view binary MARC) and a barcode file that will look something [like this](https://github.com/NYPL/scsb-export/blob/master/test/barcode.test.txt). You run the mrc2scsb.js on these two files and it will produce a XML file in the middleware schema.
+This process expects you have a MARC binary (.mrc) file exported from the ILS export table designed for this process, here is [how it looks in XML](https://gist.github.com/thisismattmiller/d4869c71eedb8f4e043f42bab576fe2d) (since it is hard to view binary MARC) and a barcode file that will look something [like this](https://github.com/NYPL/scsb-export/blob/master/test/barcode.test.txt). You run the mrc2scsb.js on these two files and it will produce a XML file in the middleware schema.
 
 To get started
 
