@@ -44,9 +44,15 @@ parsLib.loadBarcodes(options.barcode, () => {
       }
 
       record = parsLib.convertToJsonCheckSize(record)
+      record.bNumber = parsLib.extractBnumber(record.mij) // 907|a
+
+      // drop the possible too large records
+      if (record.recordSize > 90000) {
+        console.logToFile(`MARC Record larger than 90Kb - skipping, ${record.bNumber}`)
+        return ''
+      }
 
       // pull out all the data we are going to need
-      record.bNumber = parsLib.extractBnumber(record.mij) // 907|a
       record.oclcNumber = parsLib.extractOclc(record.mij)
       record.bibCallNumber = parsLib.extractBibCallNumber(record.mij)
       record.itemData = parsLib.extractItemFields(record.mij) // 852 + 876
@@ -58,11 +64,6 @@ parsLib.loadBarcodes(options.barcode, () => {
       record.items = parsLib.buildItems(record)
       record.recordObj = parsLib.buildRecord(record)
 
-      // drop the possible too large records
-      if (record.recordSize > 90000) {
-        console.logToFile(`MARC Record larger than 90Kb - skipping, ${record.bNumber}`)
-        return ''
-      }
       return record
     })
     .compact()
@@ -73,5 +74,7 @@ parsLib.loadBarcodes(options.barcode, () => {
     })
     .done(() => {
       output.end('</bibRecords>')
+      var report = fs.createWriteStream(options.marc.replace('.mrc', '_report.txt'))
+      report.end('Total Bibs:' + parsLib.countBib + '\n' + 'Total Holdings:' + parsLib.countHolding + '\n' + 'Total Items:' + parsLib.countItem + '\n' + JSON.stringify(parsLib.useRestrictionGroupDesignation, null, 2))
     })
 })

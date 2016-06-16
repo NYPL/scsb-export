@@ -511,6 +511,26 @@ describe('mapUtils lib/utils.js', function () {
     r.groupDesignation.should.equal('Shared')
   })
 
+  it('Use restriction generation - default for the GN-NW customer codes when outside of the OPAC MSG and ITEM TYPE codes.', function () {
+    var data852 = {
+      3: 'v. 1  1956',
+      b: 'rcma2',
+      h: '*QX (Mětšk, F. Chrestomatija dolnoserbskego pismowstwa)'
+    }
+    var data876 = {
+      o: 'p',
+      s: '214',
+      y: '38',
+      a: '.i100075344',
+      j: '-',
+      p: '33433002525354',
+      t: '2'
+    }
+    var r = parsLib.buildUseRestriction(data852, data876, 'JS')
+    r.useRestriction.should.equal('Supervised Use')
+    r.groupDesignation.should.equal('Private')
+  })
+
   it('Export all examples', function (done) {
     this.timeout(500000)
 
