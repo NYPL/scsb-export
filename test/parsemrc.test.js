@@ -26,6 +26,7 @@ describe('mapUtils lib/utils.js', function () {
       .map((record) => {
         record = parsLib.convertToJsonCheckSize(record)
         record.recordSize.should.equal(99938)
+        console.log(JSON.stringify(record.mij))
         record.mij.should.be.type('object')
       })
       .done(() => {
@@ -154,7 +155,7 @@ describe('mapUtils lib/utils.js', function () {
         record.itemData = parsLib.extractItemFields(record.mij) // 852 + 876
         record.holdingData = parsLib.extractHoldingFields(record.mij) // 866 data
         record.controlFields = parsLib.extractControlFields(record.mij) // control fields in mij format
-        record.dataFields = parsLib.extractDataFields(record.mij) // data fields in mij format
+        record.dataFields = parsLib.extractDataFields(record) // data fields in mij format
 
         record.bibRecord = parsLib.buildBibRecord(record)
 
@@ -172,10 +173,9 @@ describe('mapUtils lib/utils.js', function () {
     H(new marc.Iso2709Reader(fs.createReadStream('test/test_multiple_items.mrc')))
       .map((record) => {
         record = parsLib.convertToJsonCheckSize(record)
-        var r = parsLib.extractDataFields(record.mij)
+        var r = parsLib.extractDataFields(record)
         Object.keys(r[0])[0].should.equal('010')
-        Object.keys(r[1])[0].should.equal('035')
-        Object.keys(r[2])[0].should.equal('035')
+        Object.keys(r[1])[0].should.equal('040')
       })
       .done(() => {
         done()
@@ -220,7 +220,7 @@ describe('mapUtils lib/utils.js', function () {
         record.itemData = parsLib.extractItemFields(record.mij) // 852 + 876
         record.holdingData = parsLib.extractHoldingFields(record.mij) // 866 data
         record.controlFields = parsLib.extractControlFields(record.mij) // control fields in mij format
-        record.dataFields = parsLib.extractDataFields(record.mij) // data fields in mij format
+        record.dataFields = parsLib.extractDataFields(record) // data fields in mij format
 
         var field001 = parsLib.convertFields(record.controlFields, ['001'])
         should.not.exist(field001['001'])
@@ -246,7 +246,7 @@ describe('mapUtils lib/utils.js', function () {
         record.itemData = parsLib.extractItemFields(record.mij) // 852 + 876
         record.holdingData = parsLib.extractHoldingFields(record.mij) // 866 data
         record.controlFields = parsLib.extractControlFields(record.mij) // control fields in mij format
-        record.dataFields = parsLib.extractDataFields(record.mij) // data fields in mij format
+        record.dataFields = parsLib.extractDataFields(record) // data fields in mij format
         // we need to fake this a little and add in a oclc number since I can't find an example
         record.oclcNumber = '1234567890'
         var field001 = parsLib.convertFields(record.controlFields, ['001'])
@@ -274,7 +274,7 @@ describe('mapUtils lib/utils.js', function () {
         record.itemData = parsLib.extractItemFields(record.mij) // 852 + 876
         record.holdingData = parsLib.extractHoldingFields(record.mij) // 866 data
         record.controlFields = parsLib.extractControlFields(record.mij) // control fields in mij format
-        record.dataFields = parsLib.extractDataFields(record.mij) // data fields in mij format
+        record.dataFields = parsLib.extractDataFields(record) // data fields in mij format
 
         record.items = parsLib.buildItems(record)
 
@@ -297,7 +297,7 @@ describe('mapUtils lib/utils.js', function () {
         record.itemData = parsLib.extractItemFields(record.mij) // 852 + 876
         record.holdingData = parsLib.extractHoldingFields(record.mij) // 866 data
         record.controlFields = parsLib.extractControlFields(record.mij) // control fields in mij format
-        record.dataFields = parsLib.extractDataFields(record.mij) // data fields in mij format
+        record.dataFields = parsLib.extractDataFields(record) // data fields in mij format
 
         record.items = parsLib.buildItems(record)
 
@@ -321,7 +321,7 @@ describe('mapUtils lib/utils.js', function () {
         record.itemData = parsLib.extractItemFields(record.mij) // 852 + 876
         record.holdingData = parsLib.extractHoldingFields(record.mij) // 866 data
         record.controlFields = parsLib.extractControlFields(record.mij) // control fields in mij format
-        record.dataFields = parsLib.extractDataFields(record.mij) // data fields in mij format
+        record.dataFields = parsLib.extractDataFields(record) // data fields in mij format
 
         record.items = parsLib.buildItems(record)
         var r = parsLib.buildHoldings852and866andItems(record, 'JFM 04-120')
@@ -347,7 +347,7 @@ describe('mapUtils lib/utils.js', function () {
         record.itemData = parsLib.extractItemFields(record.mij) // 852 + 876
         record.holdingData = parsLib.extractHoldingFields(record.mij) // 866 data
         record.controlFields = parsLib.extractControlFields(record.mij) // control fields in mij format
-        record.dataFields = parsLib.extractDataFields(record.mij) // data fields in mij format
+        record.dataFields = parsLib.extractDataFields(record) // data fields in mij format
 
         record.items = parsLib.buildItems(record)
         var r = parsLib.buildHoldings852and866andItems(record, 'JFM 94-909')
@@ -371,7 +371,7 @@ describe('mapUtils lib/utils.js', function () {
         record.itemData = parsLib.extractItemFields(record.mij) // 852 + 876
         record.holdingData = parsLib.extractHoldingFields(record.mij) // 866 data
         record.controlFields = parsLib.extractControlFields(record.mij) // control fields in mij format
-        record.dataFields = parsLib.extractDataFields(record.mij) // data fields in mij format
+        record.dataFields = parsLib.extractDataFields(record) // data fields in mij format
 
         record.items = parsLib.buildItems(record)
         var r = parsLib.buildHoldings852and866andItems(record, 'JFM 70-1')
@@ -582,7 +582,7 @@ describe('mapUtils lib/utils.js', function () {
             record.itemData = parsLib.extractItemFields(record.mij) // 852 + 876
             record.holdingData = parsLib.extractHoldingFields(record.mij) // 866 data
             record.controlFields = parsLib.extractControlFields(record.mij) // control fields in mij format
-            record.dataFields = parsLib.extractDataFields(record.mij) // data fields in mij format
+            record.dataFields = parsLib.extractDataFields(record) // data fields in mij format
             record.items = parsLib.buildItems(record)
             record.recordObj = parsLib.buildRecord(record)
             const builder = new xml2js.Builder({headless: true})

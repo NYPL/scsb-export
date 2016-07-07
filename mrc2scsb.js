@@ -46,6 +46,17 @@ parsLib.loadBarcodes(options.barcode, () => {
       record = parsLib.convertToJsonCheckSize(record)
       record.bNumber = parsLib.extractBnumber(record.mij) // 907|a
 
+      // if you want to write out a file for testing
+      // if (record.bNumber === '.b158886495') {
+      //   fs.writeFile('test/test_duplicate_barcodes.mrc', record.recordBinary, 'binary', function (err) {
+      //     if (err) {
+      //       console.log(err)
+      //     } else {
+      //       console.log('The file was saved!')
+      //     }
+      //   })
+      // }
+
       // drop the possible too large records
       if (record.recordSize > 90000) {
         console.logToFile(`MARC Record larger than 90Kb - skipping, ${record.bNumber}`)
@@ -58,11 +69,19 @@ parsLib.loadBarcodes(options.barcode, () => {
       record.itemData = parsLib.extractItemFields(record.mij) // 852 + 876
       record.holdingData = parsLib.extractHoldingFields(record.mij) // 866 data
       record.controlFields = parsLib.extractControlFields(record.mij) // control fields in mij format
-      record.dataFields = parsLib.extractDataFields(record.mij) // data fields in mij format
+      record.dataFields = parsLib.extractDataFields(record) // data fields in mij format
 
       // build the new data structures
       record.items = parsLib.buildItems(record)
       record.recordObj = parsLib.buildRecord(record)
+
+      if (record.itemCount === 0) {
+        console.logToFile(`No items on this bib - skipping, ${record.bNumber}`)
+        return ''
+      }
+
+      // if it passed those checks
+      parsLib.countBib++
 
       return record
     })
@@ -75,6 +94,9 @@ parsLib.loadBarcodes(options.barcode, () => {
     .done(() => {
       output.end('</bibRecords>')
       var report = fs.createWriteStream(options.marc.replace('.mrc', '_report.txt'))
-      report.end('Total Bibs:' + parsLib.countBib + '\n' + 'Total Holdings:' + parsLib.countHolding + '\n' + 'Total Items:' + parsLib.countItem + '\n' + JSON.stringify(parsLib.useRestrictionGroupDesignation, null, 2))
+      report.end('Total Bibs:' + parsLib.countBib + '\n' + 'Total Holdings:' + parsLib.countHolding + '\n' + 'Total Items:' + parsLib.countItem + '\n' + 'Total bibs with OCLC:' + parsLib.countBibWithOclc + '\n' + JSON.stringify(parsLib.useRestrictionGroupDesignation, null, 2))
+
+      var useReport = fs.createWriteStream(options.marc.replace('.mrc', '_use_report.txt'))
+      useReport.end(JSON.stringify(parsLib.useRestrictionGroupDesignationCheck, null, 2))
     })
 })

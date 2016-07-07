@@ -17,6 +17,7 @@
     "eyes": "^0.1.8",
     "highland": "^2.8.1",
     "marcjs": "^0.1.12",
+    "sierra-wrapper": "nypl-registry/sierra-wrapper",
     "xml2js": "^0.4.16"
   },
   "devDependencies": {
