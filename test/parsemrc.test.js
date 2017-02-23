@@ -583,8 +583,11 @@ describe('mapUtils lib/utils.js', function () {
             record.holdingData = parsLib.extractHoldingFields(record.mij) // 866 data
             record.controlFields = parsLib.extractControlFields(record.mij) // control fields in mij format
             record.dataFields = parsLib.extractDataFields(record) // data fields in mij format
+
+            // build the new data structures
             record.items = parsLib.buildItems(record)
             record.recordObj = parsLib.buildRecord(record)
+
             const builder = new xml2js.Builder({headless: true})
             var xml = builder.buildObject(record.recordObj)
 

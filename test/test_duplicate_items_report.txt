@@ -1,0 +1,9 @@
+Total Bibs:1
+Total Holdings:2
+Total Items:2
+Total bibs with OCLC:0
+{
+  "": 1,
+  "Shared": 2,
+  "In Library Use": 1
+}
