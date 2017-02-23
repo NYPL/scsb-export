@@ -426,7 +426,7 @@ describe('mapUtils lib/utils.js', function () {
       t: '2'
     }
     var r = parsLib.buildUseRestriction(data852, data876, 'ND')
-    r.useRestriction.should.equal('Supervised Use')
+    r.useRestriction.should.equal('In Library Use')
     r.groupDesignation.should.equal('Private')
   })
 
@@ -472,8 +472,8 @@ describe('mapUtils lib/utils.js', function () {
       t: '2'
     }
     var r = parsLib.buildUseRestriction(data852, data876, 'JS')
-    r.useRestriction.should.equal('Supervised Use')
-    r.groupDesignation.should.equal('Shared')
+    r.useRestriction.should.equal('In Library Use')
+    r.groupDesignation.should.equal('Private')
   })
 
   it('Use restriction generation - Catch all', function () {
@@ -492,8 +492,8 @@ describe('mapUtils lib/utils.js', function () {
       t: '2'
     }
     var r = parsLib.buildUseRestriction(data852, data876, 'JS')
-    r.useRestriction.should.equal('Supervised Use')
-    r.groupDesignation.should.equal('Shared')
+    r.useRestriction.should.equal('In Library Use')
+    r.groupDesignation.should.equal('Private')
   })
 
   it('Use restriction generation - Catch all 2', function () {
@@ -507,8 +507,8 @@ describe('mapUtils lib/utils.js', function () {
     t: '1' }
 
     var r = parsLib.buildUseRestriction(data852, data876, 'JS')
-    r.useRestriction.should.equal('Supervised Use')
-    r.groupDesignation.should.equal('Shared')
+    r.useRestriction.should.equal('In Library Use')
+    r.groupDesignation.should.equal('Private')
   })
 
   it('Use restriction generation - default for the GN-NW customer codes when outside of the OPAC MSG and ITEM TYPE codes.', function () {
@@ -527,7 +527,7 @@ describe('mapUtils lib/utils.js', function () {
       t: '2'
     }
     var r = parsLib.buildUseRestriction(data852, data876, 'JS')
-    r.useRestriction.should.equal('Supervised Use')
+    r.useRestriction.should.equal('In Library Use')
     r.groupDesignation.should.equal('Private')
   })
 

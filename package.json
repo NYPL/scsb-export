@@ -4,7 +4,7 @@
   "description": "",
   "main": "mrc2scsb.js",
   "scripts": {
-    "test": "standard && mocha test"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
