@@ -10,12 +10,12 @@ To get started
 - Install node + npm (**requires node 5.x due to an old libxmljs dependency**)
 - `git clone https://github.com/NYPL/scsb-export.git`
 - `npm install`
-- run mrc2scsb.js with the parameters --marc for the MARC file and --barcode for the barcode
+- run mrc2scsb.js with the parameters --marc for the MARC file and --barcode for the barcode file and --dupecheck to the path of the temporary dupe check file
 
 For example if I wanted to run it on one of the test files I would execute:
 
 ```
-node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt" 
+node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt"  --dupecheck "test/temp_dupecheck.txt"
 
 ```
 This will create a new XML file called `test/test_has_866_converted.xml` and also a log file called `test/test_has_866_converted.log`
@@ -28,6 +28,15 @@ You can also tell it to start or stop if you only want to process X number of re
 ```
 
 Means only process the first 5000 records in the file
+
+Make sure to use the same dupecheck file across the group of marc records, it is a way to enforce cardinality running the script on one file at a time.
+
+---
+
+###API Convert
+You must use the Sierra API to convert over the records that broke the 99KB MARC limit. This has to be done after the MRC conversion, because it uses those reports to find the records that had errors.
+
+Edit the api2scsb.js file to point to the reports and just `node api2scsb.js` Make sure your Sierra API key file is set as well.
 
 ---
 ###Errors
