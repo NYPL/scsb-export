@@ -1,0 +1,308 @@
+$ node mrc2scsb.js --marc "test-run/recap1.mrc" --barcode "test-run/nypl_barcodeFromGFA_20170105054539.csv"  --dupecheck "test-run/temp_dupecheck.txt"
+test-run/temp_dupecheck.txt Does not exist, creating it
+Barcode Load: 5230000
+Barcodes Loaded
+No items on this bib - skipping, .b100584494
+MARC Record larger than 90Kb - skipping, .b100659123
+No items on this bib - skipping, .b100779700
+No items on this bib - skipping, .b100966573
+Missing barcode: no 876|p, .i14774619x in .b101094267
+MARC Record larger than 90Kb - skipping, .b101508748
+Missing barcode: no 876|p, .i147972334 in .b101559549
+No items on this bib - skipping, .b101622983
+Missing barcode: no 876|p, .i109843708 in .b10236686x
+No items on this bib - skipping, .b102391038
+Missing barcode: no 876|p, .i148331622 in .b102623144
+Missing barcode: no 876|p, .i148331634 in .b102623144
+Missing barcode: no 876|p, .i148331646 in .b102623144
+Missing barcode: no 876|p, .i148368451 in .b102778590
+Missing barcode: no 876|p, .i148368463 in .b102778590
+Missing barcode: no 876|p, .i148368475 in .b102778590
+Missing barcode: no 876|p, .i148368487 in .b102778590
+Missing barcode: no 876|p, .i148368499 in .b102778590
+No items on this bib - skipping, .b102779429
+No items on this bib - skipping, .b102801824
+No items on this bib - skipping, .b10289453x
+Missing barcode: no 876|p, .i148425252 in .b102989175
+Missing barcode: no 876|p, .i148442122 in .b103079567
+No items on this bib - skipping, .b103142204
+Missing barcode: no 876|p, .i100748338 in .b103167134
+Missing barcode: no 876|p, .i10074834x in .b103167134
+Missing barcode: no 876|p, .i100748351 in .b103167134
+Missing barcode: no 876|p, .i100748363 in .b103167134
+Missing barcode: no 876|p, .i100748375 in .b103167134
+Missing barcode: no 876|p, .i100748387 in .b103167134
+Missing barcode: no 876|p, .i100748399 in .b103167134
+Missing barcode: no 876|p, .i100748405 in .b103167134
+Missing barcode: no 876|p, .i100748417 in .b103167134
+Missing barcode: no 876|p, .i100748429 in .b103167134
+Missing barcode: no 876|p, .i100748430 in .b103167134
+Missing barcode: no 876|p, .i100748442 in .b103167134
+Duplicate barcode found in single record, 33433002853210, item: .i100748776 in .b103167134
+Duplicate barcode found in single record, 33433002853277, item: .i100748831 in .b103167134
+Missing barcode: no 876|p, .i148456753 in .b103167134
+Missing barcode: no 876|p, .i148456765 in .b103167134
+Missing barcode: no 876|p, .i148456777 in .b103167134
+Missing barcode: no 876|p, .i148456789 in .b103167134
+Missing barcode: no 876|p, .i148456790 in .b103167134
+Missing barcode: no 876|p, .i148456807 in .b103167134
+No items on this bib - skipping, .b103282026
+Missing barcode: no 876|p, .i148518692 in .b103584250
+Missing barcode: no 876|p, .i148518709 in .b103584250
+Missing barcode: no 876|p, .i148518710 in .b103584250
+Missing barcode: no 876|p, .i148518722 in .b103584250
+Missing barcode: no 876|p, .i148518734 in .b103584250
+Missing barcode: no 876|p, .i148518746 in .b103584250
+Missing barcode: no 876|p, .i148518758 in .b103584250
+Missing barcode: no 876|p, .i14851876x in .b103584250
+Missing barcode: no 876|p, .i148518771 in .b103584250
+Missing barcode: no 876|p, .i148546092 in .b103707384
+Missing barcode: no 876|p, .i148594438 in .b103953681
+MARC Record larger than 90Kb - skipping, .b103954557
+Missing barcode: no 876|p, .i148702107 in .b104890381
+Missing barcode: no 876|p, .i148736427 in .b105057605
+Missing barcode: no 876|p, .i148736415 in .b105057605
+Missing barcode: no 876|p, .i148736403 in .b105057605
+Missing barcode: no 876|p, .i148789201 in .b105364174
+No items on this bib - skipping, .b105626077
+MARC Record larger than 90Kb - skipping, .b105680205
+MARC Record larger than 90Kb - skipping, .b105865552
+No items on this bib - skipping, .b106469150
+Missing barcode: no 876|p, .i101559264 in .b107010276
+Missing barcode: no 876|p, .i101559276 in .b107010276
+Missing barcode: no 876|p, .i101559288 in .b107010276
+Missing barcode: no 876|p, .i10155929x in .b107010276
+Missing barcode: no 876|p, .i101559306 in .b107010276
+Missing barcode: no 876|p, .i101559318 in .b107010276
+Missing barcode: no 876|p, .i10155932x in .b107010276
+Missing barcode: no 876|p, .i101559331 in .b107010276
+Missing barcode: no 876|p, .i101559343 in .b107010276
+Missing barcode: no 876|p, .i101559355 in .b107010276
+Missing barcode: no 876|p, .i101559367 in .b107010276
+Missing barcode: no 876|p, .i110516977 in .b107010276
+Missing barcode: no 876|p, .i110516989 in .b107010276
+Missing barcode: no 876|p, .i110516990 in .b107010276
+Missing barcode: no 876|p, .i110517015 in .b107010276
+Missing barcode: no 876|p, .i110517027 in .b107010276
+Missing barcode: no 876|p, .i110517039 in .b107010276
+Missing barcode: no 876|p, .i148997995 in .b107162994
+MARC Record larger than 90Kb - skipping, .b107598048
+No items on this bib - skipping, .b107991998
+No items on this bib - skipping, .b108051626
+MARC Record larger than 90Kb - skipping, .b108309022
+Missing barcode: no 876|p, .i149114217 in .b108316750
+Missing barcode: no 876|p, .i149114205 in .b108316750
+MARC Record larger than 90Kb - skipping, .b10832770x
+MARC Record larger than 90Kb - skipping, .b108334831
+No items on this bib - skipping, .b108370021
+No items on this bib - skipping, .b108763912
+Missing barcode: no 876|p, .i10190521x in .b10916328x
+Duplicate barcode found in single record, 33433003363953, item: .i110810715 in .b109192801
+No items on this bib - skipping, .b109407350
+No items on this bib - skipping, .b109582123
+Missing barcode: no 876|p, .i149308024 in .b109901939
+Missing barcode: no 876|p, .i149318820 in .b109920557
+Missing barcode: no 876|p, .i149320061 in .b10992437x
+MARC Record larger than 90Kb - skipping, .b109937326
+No items on this bib - skipping, .b110400574
+Missing barcode: no 876|p, .i139799710 in .b110960221
+No items on this bib - skipping, .b111124591
+No items on this bib - skipping, .b111423491
+Missing barcode: no 876|p, .i14947216x in .b111531809
+Missing barcode: no 876|p, .i149472171 in .b111531809
+MARC Record larger than 90Kb - skipping, .b111544385
+MARC Record larger than 90Kb - skipping, .b111576222
+No items on this bib - skipping, .b111705459
+No items on this bib - skipping, .b112266009
+No items on this bib - skipping, .b112441385
+No items on this bib - skipping, .b112895785
+Missing barcode: no 876|p, .i149643998 in .b113274737
+Missing barcode: no 876|p, .i149645545 in .b113277659
+Missing barcode: no 876|p, .i149645557 in .b113277659
+Missing barcode: no 876|p, .i149650528 in .b113365202
+Missing barcode: no 876|p, .i14965053x in .b113365202
+Missing barcode: no 876|p, .i149652598 in .b113371299
+Missing barcode: no 876|p, .i149656555 in .b113379626
+MARC Record larger than 90Kb - skipping, .b113420912
+No items on this bib - skipping, .b113687679
+MARC Record larger than 90Kb - skipping, .b113762392
+MARC Record larger than 90Kb - skipping, .b113764984
+Non numeric barcode found, 33433079518787 33433074607072, item: .i174986403 in .b113778417
+Missing barcode: no 876|p, .i149779197 in .b114075268
+Missing barcode: no 876|p, .i149783759 in .b114083538
+Missing barcode: no 876|p, .i149786645 in .b114090786
+Missing barcode: no 876|p, .i149786669 in .b114090786
+Missing barcode: no 876|p, .i149786657 in .b114090786
+MARC Record larger than 90Kb - skipping, .b114091249
+No items on this bib - skipping, .b114299110
+MARC Record larger than 90Kb - skipping, .b114408014
+Missing barcode: no 876|p, .i14982709x in .b114420877
+Missing barcode: no 876|p, .i103316784 in .b114467493
+No items on this bib - skipping, .b114881649
+Missing barcode: no 876|p, .i149948931 in .b115159599
+Missing barcode: no 876|p, .i103488893 in .b115221487
+Missing barcode: no 876|p, .i150017339 in .b115607080
+MARC Record larger than 90Kb - skipping, .b116124441
+MARC Record larger than 90Kb - skipping, .b11686199x
+Missing barcode: no 876|p, .i150185674 in .b117003967
+Missing barcode: no 876|p, .i150185686 in .b117003967
+Missing barcode: no 876|p, .i150185698 in .b117003967
+No items on this bib - skipping, .b117645370
+MARC Record larger than 90Kb - skipping, .b118005947
+Missing barcode: no 876|p, .i150354411 in .b118019016
+Missing barcode: no 876|p, .i150354423 in .b118019016
+MARC Record larger than 90Kb - skipping, .b118020237
+MARC Record larger than 90Kb - skipping, .b118104196
+MARC Record larger than 90Kb - skipping, .b118105887
+MARC Record larger than 90Kb - skipping, .b118113215
+MARC Record larger than 90Kb - skipping, .b118114268
+MARC Record larger than 90Kb - skipping, .b118115911
+MARC Record larger than 90Kb - skipping, .b118116332
+Missing barcode: no 876|p, .i15044722x in .b118126398
+Missing barcode: no 876|p, .i15047670x in .b118172293
+Missing barcode: no 876|p, .i150476711 in .b118172293
+Missing barcode: no 876|p, .i150476723 in .b118172293
+MARC Record larger than 90Kb - skipping, .b118242295
+Missing barcode: no 876|p, .i232133426 in .b118244541
+Missing barcode: no 876|p, .i150502941 in .b118252616
+Missing barcode: no 876|p, .i150542513 in .b118289457
+MARC Record larger than 90Kb - skipping, .b118301330
+MARC Record larger than 90Kb - skipping, .b118327112
+MARC Record larger than 90Kb - skipping, .b118384909
+Missing barcode: no 876|p, .i150638942 in .b118496736
+Missing barcode: no 876|p, .i150692729 in .b11869604x
+Missing barcode: no 876|p, .i150692730 in .b11869604x
+Missing barcode: no 876|p, .i150695299 in .b118701721
+Missing barcode: no 876|p, .i150706406 in .b118715689
+No items on this bib - skipping, .b118892162
+No items on this bib - skipping, .b119087777
+No items on this bib - skipping, .b119363677
+MARC Record larger than 90Kb - skipping, .b119959471
+No items on this bib - skipping, .b120332413
+Missing barcode: no 876|p, .i150954785 in .b120386094
+Missing barcode: no 876|p, .i150966118 in .b120444495
+MARC Record larger than 90Kb - skipping, .b120536195
+No items on this bib - skipping, .b120633887
+No items on this bib - skipping, .b120719629
+No items on this bib - skipping, .b120945447
+No items on this bib - skipping, .b123248711
+Missing barcode: no 876|p, .i151107804 in .b123261107
+No items on this bib - skipping, .b123265502
+No items on this bib - skipping, .b12329213x
+No items on this bib - skipping, .b12358498x
+Missing barcode: no 876|p, .i151205589 in .b124015955
+No items on this bib - skipping, .b124510000
+No items on this bib - skipping, .b124583416
+No items on this bib - skipping, .b124658301
+No items on this bib - skipping, .b125016669
+No items on this bib - skipping, .b125108205
+Missing barcode: no 876|p, .i151279676 in .b125146541
+Missing barcode: no 876|p, .i151279688 in .b125146541
+MARC Record larger than 90Kb - skipping, .b12609682x
+MARC Record larger than 90Kb - skipping, .b126096843
+MARC Record larger than 90Kb - skipping, .b126383200
+MARC Record larger than 90Kb - skipping, .b126384150
+MARC Record larger than 90Kb - skipping, .b126385221
+MARC Record larger than 90Kb - skipping, .b12638647x
+MARC Record larger than 90Kb - skipping, .b126386481
+MARC Record larger than 90Kb - skipping, .b126388003
+MARC Record larger than 90Kb - skipping, .b126392821
+No items on this bib - skipping, .b127224610
+No items on this bib - skipping, .b127327782
+No items on this bib - skipping, .b12746993x
+No items on this bib - skipping, .b128723014
+Missing barcode: no 876|p, .i151520690 in .b129408979
+Non numeric barcode found, 33433004291153 33433004291195, item: .i112812739 in .b130106690
+No items on this bib - skipping, .b13090465x
+No items on this bib - skipping, .b130908861
+No items on this bib - skipping, .b132709855
+No items on this bib - skipping, .b132971963
+Missing barcode: no 876|p, .i151718234 in .b133847950
+No items on this bib - skipping, .b134540712
+Missing barcode: no 876|p, .i168306116 in .b134557700
+No items on this bib - skipping, .b134823904
+Missing barcode: no 876|p, .i151910066 in .b135179488
+Missing barcode: no 876|p, .i151910078 in .b135179488
+No items on this bib - skipping, .b135400375
+No items on this bib - skipping, .b135672120
+Missing barcode: no 876|p, .i107475509 in .b136171229
+No items on this bib - skipping, .b136910397
+Missing barcode: no 876|p, .i152186104 in .b139190995
+Non numeric barcode found, 33433001891666 33433001891682, item: .i108031482 in .b139419081
+No items on this bib - skipping, .b139419081
+Missing barcode: no 876|p, .i152430209 in .b13998124x
+Missing barcode: no 876|p, .i152430210 in .b13998124x
+Missing barcode: no 876|p, .i152430222 in .b13998124x
+Missing barcode: no 876|p, .i231553043 in .b13998124x
+Missing barcode: no 876|p, .i231553055 in .b13998124x
+Missing barcode: no 876|p, .i231553067 in .b13998124x
+Missing barcode: no 876|p, .i23559961x in .b13998124x
+No items on this bib - skipping, .b141098016
+No items on this bib - skipping, .b141762147
+No items on this bib - skipping, .b141764442
+No items on this bib - skipping, .b142018466
+No items on this bib - skipping, .b142018491
+No items on this bib - skipping, .b142018521
+No items on this bib - skipping, .b142018673
+No items on this bib - skipping, .b142018715
+No items on this bib - skipping, .b142018764
+No items on this bib - skipping, .b142018818
+No items on this bib - skipping, .b142018946
+No items on this bib - skipping, .b14201896x
+No items on this bib - skipping, .b142235921
+No items on this bib - skipping, .b142547177
+No items on this bib - skipping, .b142814258
+No items on this bib - skipping, .b14289008x
+No items on this bib - skipping, .b143594758
+Missing barcode: no 876|p, .i108904209 in .b149477739
+MARC Record larger than 90Kb - skipping, .b149532398
+No items on this bib - skipping, .b149542318
+MARC Record larger than 90Kb - skipping, .b149560515
+MARC Record larger than 90Kb - skipping, .b150228272
+MARC Record larger than 90Kb - skipping, .b150495158
+MARC Record larger than 90Kb - skipping, .b152806349
+MARC Record larger than 90Kb - skipping, .b152988178
+MARC Record larger than 90Kb - skipping, .b15298835x
+MARC Record larger than 90Kb - skipping, .b153068176
+No items on this bib - skipping, .b153142704
+Missing barcode: no 876|p, .i175954264 in .b153561555
+MARC Record larger than 90Kb - skipping, .b153583939
+MARC Record larger than 90Kb - skipping, .b153585997
+MARC Record larger than 90Kb - skipping, .b153631843
+MARC Record larger than 90Kb - skipping, .b153631867
+MARC Record larger than 90Kb - skipping, .b153631879
+MARC Record larger than 90Kb - skipping, .b153632136
+MARC Record larger than 90Kb - skipping, .b153632197
+MARC Record larger than 90Kb - skipping, .b153771124
+MARC Record larger than 90Kb - skipping, .b153771161
+MARC Record larger than 90Kb - skipping, .b153771240
+MARC Record larger than 90Kb - skipping, .b153771343
+MARC Record larger than 90Kb - skipping, .b153813507
+MARC Record larger than 90Kb - skipping, .b153813593
+MARC Record larger than 90Kb - skipping, .b153813623
+No items on this bib - skipping, .b153891166
+MARC Record larger than 90Kb - skipping, .b15495665x
+MARC Record larger than 90Kb - skipping, .b155026859
+MARC Record larger than 90Kb - skipping, .b155098457
+MARC Record larger than 90Kb - skipping, .b155149246
+MARC Record larger than 90Kb - skipping, .b15520676x
+No items on this bib - skipping, .b15538627x
+MARC Record larger than 90Kb - skipping, .b155412899
+No items on this bib - skipping, .b160380418
+No items on this bib - skipping, .b161201088
+MARC Record larger than 90Kb - skipping, .b161773163
+No items on this bib - skipping, .b171452082
+No items on this bib - skipping, .b172032283
+No items on this bib - skipping, .b172239928
+No items on this bib - skipping, .b173479005
+No items on this bib - skipping, .b174592760
+No items on this bib - skipping, .b174933216
+No items on this bib - skipping, .b175388210
+No items on this bib - skipping, .b17574337x
+No items on this bib - skipping, .b176039995
+No items on this bib - skipping, .b177959320
+No items on this bib - skipping, .b179368217
+No items on this bib - skipping, .b206363965
+No items on this bib - skipping, .b206405376
+No items on this bib - skipping, .b206504585
+No items on this bib - skipping, .b206504597
