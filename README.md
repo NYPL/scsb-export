@@ -16,9 +16,9 @@ For example if I wanted to run it on one of the test files I would execute:
 
 ```
 node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt"  --dupecheck "test/temp_dupecheck.txt"
-
 ```
-This will create a new XML file called `test/test_has_866_converted.xml` and also a log file called `test/test_has_866_converted.log`
+
+This will create a new XML file called `test/test_multiple_callnumbers.xml` and also a log file called `test/test_multiple_callnumbers.log`
 
 You can also tell it to start or stop if you only want to process X number of records
 
@@ -33,13 +33,13 @@ Make sure to use the same dupecheck file across the group of marc records, it is
 
 ---
 
-###API Convert
+### API Convert
 You must use the Sierra API to convert over the records that broke the 99KB MARC limit. This has to be done after the MRC conversion, because it uses those reports to find the records that had errors.
 
-Edit the api2scsb.js file to point to the reports and just `node api2scsb.js` Make sure your Sierra API key file is set as well.
+Edit the api2scsb.js file to point to the reports (if you're operating in ./data, you should be fine) and just run `node api2scsb.js`. Make sure your Sierra API key file is set as well.
 
 ---
-###Errors
+### Errors
 There are a number of errors that can occur and be reported in the log file, here is a list:
 
 `852 missing inumber` - an item's 852 feild is missing its subfield a
@@ -62,7 +62,7 @@ There are a number of errors that can occur and be reported in the log file, her
 
 ---
 
-###Tests
+### Tests
 `npm test` will run the test suite and also generate the example/test files found in `test/examples/*.mrc`
 
 
