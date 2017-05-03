@@ -32,7 +32,7 @@ var downloadData = function (bnumber, callback) {
 }
 parsLibMrc.loadBarcodes('data/barcodefile.txt', () => {
   // load all the reprots from the data directory
-  glob('data/reports/recap*.mrc.log.txt', (er, files) => {
+  glob('data/recap*.mrc.log.txt', (er, files) => {
     if (er) throw er
     console.log(files)
     // files is an array of filenames.
