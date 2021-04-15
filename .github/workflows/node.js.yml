@@ -25,4 +25,7 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm test
+    - name: Install Mocha
+      run: npm install mocha
+    - name: Run tests for scsb-export
+      run: npm test
