@@ -34,5 +34,5 @@ jobs:
       run: npm -v
     - name: Check Mocha
       run: |
-        grep mocha
+        which mocha
         
