@@ -30,6 +30,8 @@ jobs:
     - name: Look at folder structure
       run: |
         ls
-    - name: Run node tests
-      run: |
-        npm test
+    - name: Check Node
+      run: npm -v
+    - name: Check Mocha
+      run: mocha -v
+        
