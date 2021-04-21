@@ -33,5 +33,6 @@ jobs:
     - name: Check Node
       run: npm -v
     - name: Check Mocha
-      run: mocha --version
+      run: |
+        grep mocha
         
