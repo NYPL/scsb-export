@@ -30,3 +30,6 @@ jobs:
     - name: Look at folder structure
       run: |
         ls
+    - name: Run node tests
+      run: |
+        npm test
