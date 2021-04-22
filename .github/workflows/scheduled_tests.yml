@@ -33,5 +33,6 @@ jobs:
     - name: Run Mocha tests
       run: |
         cd test
+        ls
         mocha -r
         
