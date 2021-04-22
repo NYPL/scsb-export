@@ -32,6 +32,5 @@ jobs:
         ls
     - name: Run Mocha tests
       run: |
-        cd test
-        mocha parsemrc.test.js
+        node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt" --dupecheck "test/temp_dupecheck.txt"
         
