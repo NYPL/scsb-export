@@ -27,12 +27,12 @@ jobs:
       run: sudo apt install npm
     - name: NPM Version
       run: npm --version
-    - name: NPM Install
-      run: npm install
     - name: NPM Rebuild
       run: npm rebuild
     - name: Run NPM Test
       run: node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt" --dupecheck "test/temp_dupecheck.txt"
+    # - name: NPM Install
+    #   run: npm install
     # - name: Use Node.js ${{ matrix.node-version }}
     #   uses: actions/setup-node@v2
     #   with:
