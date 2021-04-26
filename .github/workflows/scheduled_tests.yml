@@ -27,10 +27,13 @@ jobs:
         node-version: 5.0.0
     - name: Install Mocha via apt command
       run: sudo apt install mocha
+    # - name: Install @mapbox/node-pre-gyp via Node
+    #   run: |
+    #     npm uninstall node-pre-gyp --save
+    #     npm install @mapbox/node-pre-gyp
     - name: Install @mapbox/node-pre-gyp via Node
       run: |
-        npm uninstall node-pre-gyp --save
-        npm install @mapbox/node-pre-gyp
+        npm i node-pre-gyp
     - name: Install marcjs via Node
       run: |
         npm install marcjs
