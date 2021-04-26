@@ -26,9 +26,11 @@ jobs:
       with:
         node-version: 5.0.0
     - name: NPM Install and Rebuild
-      runs: |
+      run: |
         npm install
         npm rebuild
+    - name: Run NPM Test
+      run: node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt" --dupecheck "test/temp_dupecheck.txt"
     # - name: Install Mocha via apt command
     #   run: sudo apt install mocha
     # - name: Install @mapbox/node-pre-gyp via Node
@@ -42,10 +44,8 @@ jobs:
     # - name: Install marcjs via Node
     #   run: |
     #     npm i marcjs
-    - name: Run NPM Test
-      run: node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt" --dupecheck "test/temp_dupecheck.txt"
     # - name: Install Babel Dependencies
-    #   run: |
+    #  run: |
     #     npm install --save-dev @babel/polyfill
     #     npm install --save-dev @babel/register
     # - name: Look at folder structure
