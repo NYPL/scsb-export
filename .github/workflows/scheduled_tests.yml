@@ -30,10 +30,7 @@ jobs:
     - name: Look at folder structure
       run: |
         ls
-    - name: Check mocha version
-      run: |
-        mocha --version
     - name: Run Mocha tests
       run: |
-        mocha mrc2scsb.js
+        mocha --compilers js:babel-core/register mrc2scsb.js
         
