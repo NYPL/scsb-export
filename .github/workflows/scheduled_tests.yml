@@ -25,9 +25,13 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: 5.0.0
-    - name: Install Mocha
+    - name: Install Mocha via apt command
       run: sudo apt install mocha
-    - name: Install Required Node Modules
+    - name: Install @mapbox/node-pre-gyp via Node
+      run: |
+        npm uninstall node-pre-gyp --save
+        npm install @mapbox/node-pre-gyp
+    - name: Install marcjs via Node
       run: |
         npm install marcjs
     - name: Run NPM Test
