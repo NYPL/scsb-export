@@ -27,10 +27,14 @@ jobs:
         node-version: 5.0.0
     - name: Install Mocha
       run: sudo apt install mocha
+    - name: Install Babel Dependencies
+      run: |
+        npm install --save-dev @babel/polyfill
+        npm install --save-dev @babel/register
     - name: Look at folder structure
       run: |
         ls
     - name: Run Mocha tests
       run: |
-        mocha --require js:babel-core/register mrc2scsb.js
+        mocha --require @babel/register --require @babel/polyfill mrc2scsb.js
         
