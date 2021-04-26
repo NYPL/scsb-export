@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: NPM Install and Rebuild
       run: |
-        sudo apt install node      
+        sudo apt install nodejs     
         sudo apt install npm
         npm install
         npm rebuild
