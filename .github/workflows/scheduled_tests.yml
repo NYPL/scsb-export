@@ -21,16 +21,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: 5.0.0
     - name: NPM Install and Rebuild
       run: |
+        sudo apt install node      
+        sudo apt install npm
         npm install
         npm rebuild
     - name: Run NPM Test
       run: node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt" --dupecheck "test/temp_dupecheck.txt"
+    # - name: Use Node.js ${{ matrix.node-version }}
+    #   uses: actions/setup-node@v2
+    #   with:
+    #     node-version: 5.0.0
     # - name: Install Mocha via apt command
     #   run: sudo apt install mocha
     # - name: Install @mapbox/node-pre-gyp via Node
