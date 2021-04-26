@@ -21,12 +21,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: NPM Install and Rebuild
-      run: |
-        sudo apt install nodejs     
-        sudo apt install npm
-        npm install
-        npm rebuild
+    - name: Install NodeJS via apt
+      run: sudo apt install nodejs     
+    - name: Install NPM via apt
+      run: sudo apt install npm
+    - name: NPM Install
+      run: npm install
+    - name: NPM Rebuild
+      run: npm rebuild
     - name: Run NPM Test
       run: node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt" --dupecheck "test/temp_dupecheck.txt"
     # - name: Use Node.js ${{ matrix.node-version }}
