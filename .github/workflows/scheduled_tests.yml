@@ -30,7 +30,9 @@ jobs:
     - name: NPM Rebuild
       run: npm rebuild
     - name: Install @mapbox/node-pre-gyp via NPM
-      run: npm install @mapbox/node-pre-gyp --save
+      run: |
+        npm install @mapbox/node-pre-gyp --save
+        npm install marcjs
     - name: Install marcjs
       run: npm install marcjs
     - name: Run NPM Test
