@@ -25,6 +25,8 @@ jobs:
       run: sudo apt install nodejs     
     - name: Install NPM via apt
       run: sudo apt install npm
+    - name: NPM Version
+      run: npm --version
     - name: NPM Install
       run: npm install
     - name: NPM Rebuild
