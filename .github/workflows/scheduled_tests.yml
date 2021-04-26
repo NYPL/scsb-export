@@ -28,7 +28,7 @@ jobs:
     - name: Install Mocha
       run: sudo apt install mocha
     - name: Run NPM Test
-      run: npm test test/examples/*.mrc
+      run: mocha test test/examples/*.test.js
     # - name: Install Babel Dependencies
     #   run: |
     #     npm install --save-dev @babel/polyfill
