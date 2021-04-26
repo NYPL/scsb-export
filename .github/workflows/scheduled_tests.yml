@@ -33,8 +33,8 @@ jobs:
     #     npm install @mapbox/node-pre-gyp
     - name: Install node-pre-gyp via Node
       run: |
-        npm uninstall node-pre-gyp
-        npm i @mapbox/node-pre-gyp
+        npm uninstall node-pre-gyp --save
+        npm i @mapbox/node-pre-gyp --save
     - name: Install marcjs via Node
       run: |
         npm i marcjs
