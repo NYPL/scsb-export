@@ -24,7 +24,7 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 5.0.0
     - name: Install Mocha
       run: sudo apt install mocha
     - name: Look at folder structure
@@ -32,5 +32,5 @@ jobs:
         ls
     - name: Run Mocha tests
       run: |
-        node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt" --dupecheck "test/temp_dupecheck.txt"
+        mocha test
         
