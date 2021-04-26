@@ -29,8 +29,10 @@ jobs:
       run: npm --version
     - name: NPM Rebuild
       run: npm rebuild
-    - name: Install marcjs via Node
-      run: npm install marcjs
+    - name: Uninstall node-pre-gyp via NPM
+      run: npm uninstall node-pre-gyp --save
+    - name: Install @mapbox/node-pre-gyp via NPM
+      run: npm install @mapbox/node-pre-gyp --save
     - name: Run NPM Test
       run: node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt" --dupecheck "test/temp_dupecheck.txt"
     # - name: Install marcjs via Node
