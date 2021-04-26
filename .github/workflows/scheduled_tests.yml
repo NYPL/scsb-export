@@ -25,19 +25,23 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: 5.0.0
-    - name: Install Mocha via apt command
-      run: sudo apt install mocha
+    - name: NPM Install and Rebuild
+      runs: |
+        npm install
+        npm rebuild
+    # - name: Install Mocha via apt command
+    #   run: sudo apt install mocha
     # - name: Install @mapbox/node-pre-gyp via Node
     #   run: |
     #     npm uninstall node-pre-gyp --save
     #     npm install @mapbox/node-pre-gyp
-    - name: Install node-pre-gyp via Node
-      run: |
-        npm uninstall node-pre-gyp --save
-        npm i @mapbox/node-pre-gyp --save
-    - name: Install marcjs via Node
-      run: |
-        npm i marcjs
+    # - name: Install node-pre-gyp via Node
+    #   run: |
+    #     npm uninstall node-pre-gyp --save
+    #     npm i @mapbox/node-pre-gyp --save
+    # - name: Install marcjs via Node
+    #   run: |
+    #     npm i marcjs
     - name: Run NPM Test
       run: node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt" --dupecheck "test/temp_dupecheck.txt"
     # - name: Install Babel Dependencies
