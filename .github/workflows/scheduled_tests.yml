@@ -31,12 +31,12 @@ jobs:
     #   run: |
     #     npm uninstall node-pre-gyp --save
     #     npm install @mapbox/node-pre-gyp
-    - name: Install @mapbox/node-pre-gyp via Node
+    - name: Install node-pre-gyp via Node
       run: |
         npm i node-pre-gyp
     - name: Install marcjs via Node
       run: |
-        npm install marcjs
+        npm i marcjs
     - name: Run NPM Test
       run: node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt" --dupecheck "test/temp_dupecheck.txt"
     # - name: Install Babel Dependencies
