@@ -1,3 +1,6 @@
+# Deprecated
+This repo is deprecated as the code has been copied directly into [scsb-ongoing-accessions](https://github.com/NYPL/scsb-ongoing-accessions).
+
 # scsb-export
 [![travis](https://travis-ci.org/NYPL/scsb-export.svg)](https://travis-ci.org/NYPL/scsb-export/)
 
