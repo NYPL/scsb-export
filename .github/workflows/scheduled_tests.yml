@@ -1,0 +1,42 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    # strategy:
+    #   matrix:
+    #     node-version: [10.x, 12.x, 14.x, 15.x]
+    #     # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install NodeJS via apt
+      run: sudo apt install nodejs     
+    - name: Install NPM via apt
+      run: sudo apt install npm
+    - name: NPM Version
+      run: npm --version
+    - name: NPM Rebuild
+      run: npm rebuild
+    - name: Install @mapbox/node-pre-gyp via NPM
+      run: |
+        npm install @mapbox/node-pre-gyp --save
+        npm install marcjs
+    - name: Install marcjs
+      run: npm install marcjs
+    - name: Run NPM Test
+      run: node mrc2scsb.js --marc "test/test_multiple_callnumbers.mrc" --barcode "test/barcode.test.txt" --dupecheck "test/temp_dupecheck.txt"
+    # - name: Uninstall node-pre-gyp via NPM
+    #   run: npm uninstall node-pre-gyp --save
+        
